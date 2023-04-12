@@ -25,8 +25,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script>
-    const API_KEY = localStorage.getItem("openAI");
-
+  ;
 	  async function callCHATGPT() {
 		var responseText1 = document.getElementById("chatgpt-response");
 		responseText1.innerHTML = ""
@@ -48,7 +47,7 @@
         var url = "https://api.openai.com/v1/chat/completions";
         xhr.open("POST", url, false);
         xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.setRequestHeader("Authorization", API_KEY );
+        xhr.setRequestHeader("Authorization", localStorage.getItem("openAI") );
         xhr.onreadystatechange = function() {
           if (xhr.readyState === 4 && xhr.status === 200) {
             var json = JSON.parse(xhr.responseText);
