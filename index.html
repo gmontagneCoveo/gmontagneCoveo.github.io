@@ -92,11 +92,11 @@
   <body>
     <div class="page-loader">
       <div class="loader">Loading...</div></div>
-      <header class="site-header sticky-top" role="banner">
-
-        <nav class="navbar navbar-expand-md navbar-dark site-navbar px-md-81 py-81">
-          <div class="container-fluid px-0">
-            <a class="navbar-brand site-navbar-brand ps-150 ps-md-81 me-400 fs-75" href="/en/0/">
+    <header id="sticky-header">
+      <div class="header-area">
+        <div class="container sm-100">
+          <div class="row">
+            <div class="col-md-3 col-sm-2">
               <div class="d-flex logo w-rem600">
                 <img src="https://docs.coveo.com/en/assets/images/coveo-horizontal-white.svg" data-ot-ignore="">
                 <div class="d-flex ps-75 pt-31 text-accent-red-6">
@@ -106,76 +106,11 @@
                   <span class="pb-1">docs</span>
                 </div>
               </div>
-            </a>
-            <button class="navbar-toggler site-navbar-toggler h-rem237 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-              <div class="w-md-80 justify-content-center">
-                <atomic-external selector="#docs-search" class="hydrated">
-                  <atomic-search-box redirection-url="/en/search/" data-atomic-rendered="true" data-atomic-loaded="true" class="hydrated" number-of-queries="8" clear-filters=""></atomic-search-box>
-                </atomic-external>
-                
-                <atomic-search-interface id="docs-search" analytics="" language="en" reflect-state-in-url="" scroll-container="atomic-search-interface" language-assets-path="./lang" icon-assets-path="./assets" enable-relevance-inspector="" class="hydrated" pipeline="" search-hub="default"><atomic-aria-live class="hydrated" style="position: absolute; display: block; height: 0px; overflow: hidden; margin: 0px;"><div id="aria-live-9yccz-search-box" aria-live="polite" role="status"></div><div id="aria-live-9yccz-search-suggestions" aria-live="assertive" role="status"></div></atomic-aria-live></atomic-search-interface>
-                
-              </div>
-              <div class="btn-group justify-content-end py-81 py-md-0" role="group" aria-label="Navigation links">
-                <button type="button" class="btn site-navbar-btn">
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyNL18g4JWIDR5xEyIMY48JIjyjwXRmlCveecjXBNSLh4Ygg/viewform?usp=sf_link" class="navbar-link fs-75 fw-400" target="_blank">Feedback</a>
-                </button>
-                <button type="button" class="btn btn-primary rounded">
-                  <a href="https://www.coveo.com/en/free-trial" target="_blank" class="marketing-header navbar-button fs-75 fw-400 text-nowrap">Get a free trial</a>
-                </button>
-              </div>
-      
-              <div class="btn-group">
-                <button type="button" class="btn dropdown-toggle settings-dropdown w-rem300 fs-75 fw-300" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="/en/assets/icons/header/more.svg" class="w-rem125" data-ot-ignore="">
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end settings-dropdown-menu position-absolute rounded-4">
-                  <li><span class="dropdown-item-text dropdown-settings-text">More</span></li>
-                  <li style="cursor:pointer;"><a class="dropdown-item settings-dropdown-item fs-75 fw-300" href="/en/3378/">News</a></li>
-                  <li style="cursor:pointer;"><a class="dropdown-item settings-dropdown-item fs-75 fw-300 external-link" href="https://connect.coveo.com/" target="_blank">Community<img data-ot-ignore="" class="external-link-icon" src="/en/assets/icons/external/external-action-4.svg"></a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><span class="dropdown-item-text dropdown-settings-text">Settings</span></li>
-                  <li><dark-mode-toggle class="px-75" legend="Dark mode" light="off" dark="on" permanent="" mode="dark" appearance="toggle"></dark-mode-toggle></li>
-                  <li style="cursor:pointer;"><a class="dropdown-item settings-dropdown-item fs-75 fw-300" onclick="OneTrust.ToggleInfoDisplay()">Cookie preferences</a></li>
-                </ul>
-              </div>
-              <div class="header-toc-container overflow-auto">
-        <aside class="header-toc">
-          <nav><ul class="nav-list list-level-1 m-0 list-unstyled">
-        <li class="nav-entry entry-level-1">
-          <a href="#tocChildren" class="dropdown-toggle nav-entry-expand d-block ps-2 pe-100 py-50 float-end fs-87 text-decoration-none" title="Reference" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="tocChildren"></a>
-          <a class="nav-entry-item d-block ps-2 pe-100 py-50 fs-87 text-decoration-none" href="/en/3388/">Reference</a>
-          <ul id="tocChildren" class="nav-list list-level-2 m-0 list-unstyled collapse show">
-            <li class="nav-entry entry-level-2">
-      <a class="nav-entry-item d-block ps-3 pe-100 py-50 fs-87 text-decoration-none" href="/en/2825/">User context selection algorithm</a>
-            </li>
-      <li class="nav-entry entry-level-2"><a class="nav-entry-item d-block ps-3 pe-100 py-50 fs-87 text-decoration-none active" href="/en/mb3e0324/">Archived models</a></li>
-      <li class="nav-entry entry-level-2">
-      <a class="nav-entry-item d-block ps-3 pe-100 py-50 fs-87 text-decoration-none" href="/en/1913/">permanentid field</a>
-            </li>
-      <li class="nav-entry entry-level-2">
-      <a class="dropdown-toggle nav-entry-expand d-block ps-2 pe-100 py-50 float-end fs-87 text-decoration-none collapsed" title="ML advanced parameters"></a><a class="nav-entry-item d-block ps-3 pe-100 py-50 fs-87 text-decoration-none" href="/en/m3va7197/">ML advanced parameters</a>
-            </li>
-      <li class="nav-entry entry-level-2">
-      <a class="dropdown-toggle nav-entry-expand d-block ps-2 pe-100 py-50 float-end fs-87 text-decoration-none collapsed" title="Advanced model configurations API"></a><a class="nav-entry-item d-block ps-3 pe-100 py-50 fs-87 text-decoration-none" href="/en/l3od9093/">Advanced model configurations API</a>
-            </li>
-      </ul>
-        </li>
-      </ul>
-      </nav>
-        </aside>
-      </div>
-      
             </div>
           </div>
-        </nav>
-      
-      </header>
+        </div>
+      </div>
+    </header>
     <div class="basic-portfolio-area ptb-10">
       <div class="filter-menu mb-40">
         <h1>Ask & Refine</h1>
