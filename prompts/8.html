@@ -1,0 +1,166 @@
+
+
+
+<!doctype html>
+<html class="no-js" lang="">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>How to filter out events from being used by the Coveo Machine Learning models? - Ask & Refine MLX Demo</title>
+    <meta name="description" content="What is Best Practice for ML models on pipelines, aka filter context for each model?">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <style>#chatgpt-response { font-family: "Calibri"; font-size: 20px; color: #0000FF; font-weight: bold; }</style>
+    <!-- favicon icon -->
+    <link rel="icon" href="../img/favicon.png">
+    <!-- All CSS Files Here -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/et-line-fonts.css">
+    <link rel="stylesheet" href="../css/ionicons.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/meanmenu.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <script>  
+	  const API_KEY = localStorage.getItem("openAI");
+
+    async function callCHATGPT() {
+		var responseText1 = document.getElementById("chatgpt-response");
+		responseText1.innerHTML = ""
+        function printMessage(message) {
+          var responseText = document.getElementById("chatgpt-response");
+          var index = 0;
+
+          var interval = setInterval(function() {
+            responseText.innerHTML += message[index];
+            index++;
+
+            if (index >= message.length) {
+              clearInterval(interval);
+            }
+          },
+          20); // Print one character every 20 milliseconds
+        }
+        var xhr = new XMLHttpRequest();
+        var url = "https://api.openai.com/v1/chat/completions";
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        xhr.setRequestHeader("Authorization", "Bearer " + API_KEY);
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            var json = JSON.parse(xhr.responseText);
+            var response = json.choices[0].message.content;
+
+            // Output the return value of CHATGPT to the text box.
+            var responseText = document.getElementById("chatgpt-response");
+			
+            var index = 0;
+
+            // Create a timer to print one character every period of time
+            var interval = setInterval(function() {
+              responseText.innerHTML += response[index];
+              index++;
+
+              // Clear the timer when the printing is completed
+              if (index >= response.length) {
+                clearInterval(interval);
+              }
+            },
+            20); // Print one character every 20 milliseconds.
+          }
+        };
+		var prompt = document.getElementById("chat-gpt-input").value
+
+        var data = JSON.stringify({
+		      "messages":  [{"role": "user", "content": prompt}],
+          "temperature": 0.5,
+          "top_p": 1,
+          "frequency_penalty": 0,
+          "presence_penalty": 0,
+          "model": "gpt-3.5-turbo"
+        });
+        console.log(data);
+        //await printMessage('Replying to your question, please wait.');
+		    await xhr.send(data);
+      }
+	</script>
+  </head>
+	 
+  <body>
+    <div class="page-loader">
+      <div class="loader">Loading...</div></div>
+    <header id="sticky-header">
+              <div class="d-flex logo w-rem600" style="padding-top:15px;padding-left:3%;font-family:canada-type-gibson,sans-serif">
+                <img src="https://docs.coveo.com/en/assets/images/coveo-horizontal-white.svg" width="96" height="29.5" data-ot-ignore="">
+              </div>
+    </header>
+    <div class="basic-portfolio-area ptb-10">
+      <div class=""></div>
+        <div class="filter-menu mb-40" style="padding-left:3%">
+        <h1>Ask & Refine</h1>
+        <h2>How to filter out events from being used by the Coveo Machine Learning models?</h2>
+        <p hidden>To filter out events from being used by the Coveo Machine Learning models, you can create a filter rule in the Coveo Cloud administration console. 
+
+          1. Login to the Coveo Cloud administration console.
+          2. Select the organization in which you want to create the filter rule.
+          3. Click on the "Machine Learning" tab.
+          4. Click on "Filter Rules" in the left-hand menu.
+          5. Click on "Add Filter Rule".
+          6. Choose the type of filter you want to create (e.g. exclude specific events).
+          7. Define the criteria for the filter (e.g. event type, user, etc.).
+          8. Save the filter rule.
+          
+          Once the filter rule is saved, the specified events will be excluded from being used by the Coveo Machine Learning models.</p>
+      </div>
+		<p></p>
+	  </div>
+      <div class="call-to-action-area gray-bg ptb-60">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-sm-9 col-xs-12">
+              <div class="form-group">
+                <label></label>
+                <textarea class="form-control" id="chat-gpt-input" placeholder="Your question" rows="3" resize="none" style="width: 135%; margin: 0 auto; background-color: #f4f4f4; color: #333; border: 1px solid #ccc; border-radius: 12px;">How to filter out events from being used by the Coveo Machine Learning models? </textarea>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="call-to-action">
+                  <button onclick="callCHATGPT()" autocomplete="off" class="btn btn-large" href="#" style="background-color: #333; color: #f4f4f4; border-radius: 10px">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Refine</button></div>
+              </div>
+              <div class="col-md-9 col-sm-9 col-xs-12">
+                <div class="call-to-action">
+                  <label></label>
+                  <textarea class="form-control" id="chatgpt-response" placeholder="" rows="18" resize="none" style="width: 150%;height: auto; margin: 0 auto; background-color: #f4f4f4; color: #333; border: 1px solid #ccc; border-radius: 10px; overflow: scroll;" readonly="true">To filter out events from being used by the Coveo Machine Learning models, you can create a filter rule in the Coveo Cloud administration console. 
+
+                    1. Login to the Coveo Cloud administration console.
+                    2. Select the organization in which you want to create the filter rule.
+                    3. Click on the "Machine Learning" tab.
+                    4. Click on "Filter Rules" in the left-hand menu.
+                    5. Click on "Add Filter Rule".
+                    6. Choose the type of filter you want to create (e.g. exclude specific events).
+                    7. Define the criteria for the filter (e.g. event type, user, etc.).
+                    8. Save the filter rule.
+                    
+                    Once the filter rule is saved, the specified events will be excluded from being used by the Coveo Machine Learning models.</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+		</div>
+	
+
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.meanmenu.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+  </body>
+
+</html>
