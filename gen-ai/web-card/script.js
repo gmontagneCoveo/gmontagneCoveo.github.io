@@ -1,4 +1,4 @@
-var data = [40, 30, 20, 10];
+var data = [3, 18, 2];
 var width = 290,
   height = 250,
   radius = 60;
@@ -34,7 +34,7 @@ let totalNumber = svg
 let totalText = svg
   .append("text")
   .attr("y", height / 2 - 20)
-  .text("Total")
+  .text("Minutes")
   .attr("fill", "#aaaaaa")
   .attr("font-size", "14px")
   .attr("text-anchor", "middle");
