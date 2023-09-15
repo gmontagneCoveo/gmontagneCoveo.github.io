@@ -1,4 +1,4 @@
-var data = [40, 30, 20, 10];
+var data = [22];
 var width = 290,
   height = 250,
   radius = 60;
