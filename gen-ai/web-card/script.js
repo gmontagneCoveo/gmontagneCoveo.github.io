@@ -3,7 +3,7 @@ var width = 290,
   height = 250,
   radius = 60;
 
-var color = d3.scaleLinear().domain([0, 60]).range(["#3f37c9", "#4cc9f0"]);
+var color = d3.scaleLinear().domain([0, 20]).range(["#3f37c9", "#4cc9f0"]);
 
 var svg = d3
   .select("svg")
