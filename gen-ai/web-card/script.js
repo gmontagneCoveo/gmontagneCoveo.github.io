@@ -35,7 +35,7 @@ let totalText = svg
   .append("text")
   .attr("y", height / 2 - 20)
   .text("Minutes")
-  .attr("fill", "#aaaaaa")
+  .attr("fill", "#ba0202")
   .attr("font-size", "14px")
   .attr("text-anchor", "middle");
 
