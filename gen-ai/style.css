@@ -27,8 +27,8 @@ td {
 }
 
 .center {
-  margin-left: 50%;
-  margin-right: 50%;
+  position: absolute;
+  left: 50%;
 }
 
 .ios {
