@@ -21,6 +21,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+a {
+  font-family: canada-type-gibson, sans-serif;
+  text-align: center;
+  padding: 10px;
+  font-size: 1em;
+}
+
 th,
 td {
   padding: 20px;
