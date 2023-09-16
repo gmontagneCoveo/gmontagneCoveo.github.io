@@ -42,6 +42,14 @@ body {
   box-sizing: border-box;
 }
 
+#text2 {
+  position: absolute;
+  margin: 150px 20px;
+  width:  260px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
 #svg {
   position: absolute;
   margin-top:150px;
