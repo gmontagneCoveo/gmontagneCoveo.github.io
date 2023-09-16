@@ -25,6 +25,7 @@ body {
   margin: 15px 20px;
   font-size: 24px;
   color: black;
+  text-align: center;
 }
 
 #sub-title {
@@ -32,23 +33,27 @@ body {
   margin: 75px 20px;
   font-size: 16px;
   color: #aaaaaa;
+  text-align: center;
 }
 
-#text {
+#words {
   position: absolute;
   margin: 125px 20px;
   width:  260px;
   font-size: 14px;
   box-sizing: border-box;
+  text-align: center;
 }
 
-#text2 {
+#text {
   position: absolute;
   margin: 150px 20px;
   width:  260px;
   font-size: 14px;
   box-sizing: border-box;
+  text-align: center;
 }
+
 
 #svg {
   position: absolute;
