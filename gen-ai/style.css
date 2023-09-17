@@ -35,7 +35,8 @@ th,td {
 }
 
 .center {
-  margin-left: 20%;
+  position: absolute;
+  left: 50%;
 }
 
 .ios {
