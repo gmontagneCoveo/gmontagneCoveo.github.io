@@ -22,13 +22,14 @@ h1 {
 }
 
 table {
-  height: 500px;
+  height: 750px;
   border: 1px solid black;
 }
 
 
 th,td {
   padding: 20px;
+  border: 1px solid black;
 }
 
 .center {
