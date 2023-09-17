@@ -21,6 +21,11 @@ h1 {
   font-weight: bold;
 }
 
+table {
+  height: 500px;
+}
+
+
 th,td {
   padding: 20px;
 }
