@@ -23,6 +23,7 @@ h1 {
 
 table {
   height: 710px;
+  overflow: hidden;
 }
 
 
@@ -30,6 +31,7 @@ th,td {
   padding: 20px;
   vertical-align: middle;
   text-align: center;
+  overflow: hidden;
 }
 
 .center {
