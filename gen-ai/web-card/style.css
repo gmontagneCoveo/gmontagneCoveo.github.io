@@ -11,8 +11,8 @@ body {
 }
 
 #card {
-  height: 450px;
-  width: 300px;
+  height: 500px;
+  width: 290px;
   background-color: #fff;
   border-radius: 14px;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
@@ -23,8 +23,8 @@ body {
 }
 
 #title {
-  position: relative;
-  margin: 15px 20px;
+  position: absolute;
+  margin: 15px 60px;
   font-size: 24px;
   color: black;
   text-align: center;
@@ -32,31 +32,31 @@ body {
 
 #sub-title {
   position: absolute;
-  margin: 10px 20px;
+  margin: 80px 10px;
   font-size: 16px;
   color: #aaaaaa;
   text-align: center;
 }
 
-#words {
-  position: absolute;
-  margin: 90px;
-  width:  108px;
-  font-size: 14px;
-  text-align: center;
-}
-
 #text {
   position: absolute;
-  margin: 50px 20px;
+  margin: 110px 20px;
   width:  260px;
   font-size: 14px;
   box-sizing: border-box;
   text-align: center;
 }
 
+#words {
+  position: absolute;
+  margin: 140px 94px;
+  width:  108px;
+  font-size: 14px;
+  text-align: center;
+}
+
 #svg {
   position: absolute;
-  margin-top:100px;
+  margin-top:150px;
   height: 250px;
 }
