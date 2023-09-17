@@ -27,25 +27,28 @@ body {
   margin: 15px 20px;
   font-size: 24px;
   color: black;
+  text-align: center;
 }
 
 #sub-title {
   position: absolute;
-  margin: 50px 20px;
+  margin: 75px 20px;
   font-size: 16px;
   color: #aaaaaa;
+  text-align: center;
 }
 
 #text {
   position: absolute;
-  margin: 75px 20px;
+  margin: 100px 20px;
   width:  260px;
   font-size: 14px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 #svg {
   position: absolute;
-  margin-top:130px;
+  margin-top:150px;
   height: 250px;
 }
