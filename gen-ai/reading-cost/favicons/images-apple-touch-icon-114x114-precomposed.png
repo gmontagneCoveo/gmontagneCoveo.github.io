@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="google-site-verification" content="xWtehtrl92ZffHdBGNoyIRZyd7v7vZLHQ5LtJF5M2XE" /> <!-- Give Access to MAV -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source @ Coveo &mdash; A technical blog by the fine people at Coveo</title>
+    <link rel="stylesheet" href="https://use.typekit.net/bqa0xml.css">
+         
+    <link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.10093/css/CoveoFullSearch.css"/>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/coveo-static/community-unified-navigation/css/styles.css" />
+    <link rel="stylesheet" href="https://source.coveo.com/css/community-unified-navigation-custom.css?v=20220802"/>
+
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="https://static.cloud.coveo.com/searchui/v2.10093/js/CoveoJsSearch.Lazy.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://source.coveo.com/css/main.css"/>
+    <link rel="shortcut icon" href="https://www.coveo.com/public/img/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://source.coveo.com/images/apple-touch-icon-144x144	-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://source.coveo.com/images/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://source.coveo.com/images/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://source.coveo.com/images/apple-touch-icon-precomposed.png" />
+    <link href="https://source.coveo.com/feed.xml" rel="alternate" type="application/rss+xml" title="Source @ Coveo" />
+
+    <meta property="og:site_name" content="source.coveo.com" />
+    <meta name="twitter:card" content="summary" />
+
+
+  <meta property="og:type" content="website" />
+  <meta property="title" content="source.coveo.com" />
+  <meta property="og:title" content="source.coveo.com" />
+  <meta name="twitter:title" content="source.coveo.com" />
+
+
+
+  <meta property="og:description" content="Our technical blog." />
+  <meta name="twitter:description" content="Our technical blog." />
+
+
+
+  <meta content="https://source.coveo.com/404.html" property="og:url" />
+
+
+
+
+
+  
+    <meta property="og:image" content="https://source.coveo.com/images/logo2.png" />
+    <meta property="og:image:width" content="560" />
+    <meta property="og:image:height" content="560" />
+    <meta name="twitter:image" content="https://source.coveo.com/images/logo2.png" />
+  
+
+
+
+
+
+
+
+
+<!-- OneTrust Cookies Consent Notice start for coveo.com -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/189eb9e6-31f9-412d-981f-f16eb5581a81/OtAutoBlock.js" ></script>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="189eb9e6-31f9-412d-981f-f16eb5581a81" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end for coveo.com -->
+
+
+  <!--google analytics tracking code here-->
+<script type="text/javascript">
+    var dataLayer = window.dataLayer = window.dataLayer || [];
+</script>
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KFWG39G');
+</script>
+
+
+<link rel="canonical" href="https://source.coveo.com/404.html">
+
+
+
+
+</head>
+<body>
+
+	<header>
+		<div class="upHeader clear">
+			<div class="logos">
+				<a href="https://www.coveo.com" class="logo" title="Coveo community"></a>
+				<h3><a href="#">Community</a></h3></div>
+			<h1 class="currentSiteName"><em>Tech Blog</em> <span>Menu<i class="arrow"></i></span></h1>
+			<nav>
+				<ul class="menu floated">
+					<li><a id="jsSupport" href="https://connect.coveo.com"  target="_blank">Connect</a></li>
+					<li><a id="jsProductDocs" href="https://docs.coveo.com" target="_blank">Product docs</a></li>
+					<li><a id="jsTraining" href="https://levelup.coveo.com/" target="_blank">Level Up</a></li>
+					<li><a d="jsTechBlog" href="/"  class="current">Tech Blog</a></li>
+				</ul>
+				<ul class="externalbox with-sub">
+					<li>
+						<a href="#" class="sub">More <i class="arrow"></i></a>
+						<ul>
+              <li><a d="jsCloudAdminV2" target="_blank" href="https://platform.cloud.coveo.com">Coveo Relevance Platform</a></li>
+              <li><a d="coveoTurbo" target="_blank" href="https://coveo-turbo.github.io">Coveo Turbo</a></li>
+              <li><a d="coveoGithub" target="_blank" href="https://github.com/coveo">Coveo GitHub</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="bottomHeader">
+			<div id="searchBox">
+        <div class="CoveoSearchbox" type="text"
+          data-enable-omnibox="true"
+          data-inline="false"
+          data-enable-wildcards="true"
+          data-enable-search-as-you-type="false"
+          data-enable-reveal-query-suggest-addon="true"
+          data-enable-query-syntax="true"
+          data-enable-field-addon="true">
+        </div>
+				<div class="CoveoAnalytics" data-search-hub="CustomerZeroCommunityCustomer">
+			</div>
+		</div>
+	</header>
+</div>
+
+<div class="errorpage">
+  <h1>404</h1>
+  <img src="/images/error404.png" />
+  <h3>Even the best search engine couldn't find what you are looking for.</h3>
+</div>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2023
+
+        <nav>
+            <a href="https://www.coveo.com/">Coveo</a> &middot;
+            <a href="https://connect.coveo.com">Connect</a>
+            <a href="https://docs.coveo.com">Documentation</a>
+            <a href="https://careers.coveo.com">Careers</a>  &middot;
+            <a href="#ot_toggleInfoDisplay" class="show-ot-infoDisplay">Cookies Preferences</a>
+            <a href="https://www.coveo.com/en/pages/privacy-policy#California-Residents" target="_blank" class="ccpa"> <img src="images/ccpa-privacyoptions.svg" alt="CCPA" width="33" id="ccpa_icon" />Your Privacy Choices</a>
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/coveo" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="https://source.coveo.com/feed.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/js/main.js?v=1"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript" charset="utf-8">
+
+$(function() {
+  enableSelectBoxes();
+});
+
+function enableSelectBoxes(){
+  $('div.selectBox').each(function(){
+
+    $(this).children('span.selected').html("Blog");
+
+    $(this).children('span.selected,span.selectArrow').click(function(){
+      $('span.selectArrow').toggleClass('active');
+      $('div.selectBox').toggleClass('active');
+      if($(this).parent().children('div.selectOptions').css('display') == 'none'){
+        $(this).parent().children('div.selectOptions').css('display','block');
+      } else {
+        $(this).parent().children('div.selectOptions').css('display','none');
+      }
+    });
+
+    $(this).find('span.selectOption').click(function() {
+      $(this).parent().css('display','none');
+      location.replace($(this).attr('value'));
+    });
+  });
+}
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="google-site-verification" content="xWtehtrl92ZffHdBGNoyIRZyd7v7vZLHQ5LtJF5M2XE"> <!-- Give Access to MAV -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where to leverage product recommendations - 4 Product Recommendation Examples in Commerce  — Source @ Coveo</title>
+    <link rel="stylesheet" href="https://use.typekit.net/bqa0xml.css">
+         
+    <link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.10093/css/CoveoFullSearch.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/coveo-static/community-unified-navigation/css/styles.css">
+    <link rel="stylesheet" href="css/css-community-unified-navigation-custom.css">
+
+	<script src="js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/js-CoveoJsSearch.Lazy.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="css/css-main.css">
+    <link rel="shortcut icon" href="favicons/img-favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/images-apple-touch-icon-144x144%09-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/images-apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/images-apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="favicons/images-apple-touch-icon-precomposed.png">
+    <link href="https://source.coveo.com/feed.xml" rel="alternate" type="application/rss+xml" title="Source @ Coveo">
+
+    <meta property="og:site_name" content="source.coveo.com">
+    <meta name="twitter:card" content="summary">
+
+
+  <meta property="og:type" content="article">
+  <meta property="title" content="Where to leverage product recommendations - 4 Product Recommendation Examples in Commerce ">
+  <meta property="og:title" content="Where to leverage product recommendations - 4 Product Recommendation Examples in Commerce ">
+  <meta name="twitter:title" content="Where to leverage product recommendations - 4 Product Recommendation Examples in Commerce ">
+
+
+
+  <meta property="og:description" content="Our technical blog.">
+  <meta name="twitter:description" content="Our technical blog.">
+
+
+
+  <meta content="https://source.coveo.com/2021/01/20/where-to-leverage-product-recommendations/" property="og:url">
+
+
+
+  <meta content="2021-01-20T00:00:00+00:00" property="article:published_time">
+  <meta content="https://source.coveo.com/about/" property="article:author">
+
+
+
+  
+    <meta property="og:image" content="https://source.coveo.com/images/logo2.png">
+    <meta property="og:image:width" content="560">
+    <meta property="og:image:height" content="560">
+    <meta name="twitter:image" content="https://source.coveo.com/images/logo2.png">
+  
+
+
+
+  
+
+
+
+  <meta name="tags" content="product recommendation;machine learning;commerce;">
+  
+  <meta property="article:tag" content="product recommendation">
+  
+  <meta property="article:tag" content="machine learning">
+  
+  <meta property="article:tag" content="commerce">
+  
+
+
+
+  <meta name="author" content="Alexandra Rioux">
+
+
+<!-- OneTrust Cookies Consent Notice start for coveo.com -->
+<script type="text/javascript" src="js/189eb9e6-31f9-412d-981f-f16eb5581a81-OtAutoBlock.js"></script>
+<script src="js/scripttemplates-otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="189eb9e6-31f9-412d-981f-f16eb5581a81"></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end for coveo.com -->
+
+
+  <!--google analytics tracking code here-->
+<script type="text/javascript">
+    var dataLayer = window.dataLayer = window.dataLayer || [];
+</script>
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KFWG39G');
+</script>
+
+
+<link rel="canonical" href="https://source.coveo.com/2021/01/20/where-to-leverage-product-recommendations/">
+
+
+
+
+</head>
+<body>
+
+	<header>
+		<div class="upHeader clear">
+			<div class="logos">
+				<a href="https://www.coveo.com" class="logo" title="Coveo community"></a>
+				<h3><a href="#">Community</a></h3></div>
+			<h1 class="currentSiteName"><em>Tech Blog</em> <span>Menu<i class="arrow"></i></span></h1>
+			<nav>
+				<ul class="menu floated">
+					<li><a id="jsSupport" href="https://connect.coveo.com" target="_blank">Connect</a></li>
+					<li><a id="jsProductDocs" href="https://docs.coveo.com" target="_blank">Product docs</a></li>
+					<li><a id="jsTraining" href="https://levelup.coveo.com/" target="_blank">Level Up</a></li>
+					<li><a d="jsTechBlog" href="source.coveo.html" class="current">Tech Blog</a></li>
+				</ul>
+				<ul class="externalbox with-sub">
+					<li>
+						<a href="#" class="sub">More <i class="arrow"></i></a>
+						<ul>
+              <li><a d="jsCloudAdminV2" target="_blank" href="https://platform.cloud.coveo.com">Coveo Relevance Platform</a></li>
+              <li><a d="coveoTurbo" target="_blank" href="https://coveo-turbo.github.io">Coveo Turbo</a></li>
+              <li><a d="coveoGithub" target="_blank" href="https://github.com/coveo">Coveo GitHub</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="bottomHeader">
+			<div id="searchBox">
+        <div class="CoveoSearchbox" type="text" data-enable-omnibox="true" data-inline="false" data-enable-wildcards="true" data-enable-search-as-you-type="false" data-enable-reveal-query-suggest-addon="true" data-enable-query-syntax="true" data-enable-field-addon="true">
+        </div>
+				<div class="CoveoAnalytics" data-search-hub="CustomerZeroCommunityCustomer">
+			</div>
+		</div>
+	
+</div>
+
+<!-- <div class="illustration">
+    <div class="container">
+        <a href="/"><img src="https://source.coveo.com/images/illustration-half.png" alt="Tech Blog" class="half-ill"></a>
+    </div>
+</div> -->
+
+
+<article>
+
+    <div class="container">
+        <div class="single">
+            <header>
+                <h1 class="title">Where to leverage product recommendations - 4 Product Recommendation Examples in Commerce </h1>
+                
+                <div class="meta">
+    	            By <address><a rel="author" href="https://twitter.com/alexandrarioux1" title="" target="_blank">Alexandra Rioux</a></address> —
+                    <time pubdate datetime="2021-20-January" title="January 20, 2021">January 20, 2021</time>
+                </div>
+
+            </header>
+
+            <section>
+                <div class="post_content">
+                    <p>Personalization is one of the biggest marketing trends and is becoming the norm in the industry. Customers are becoming more and more impatient when dealing with online experiences. Not only do they want to be treated as individuals, but they’re also expecting brands to show them content that is relevant to them quickly.</p>
+
+<p>Adding product recommendations to your online experience can help you remain relevant across every interaction while determining your customers’ intent to increase conversion and ensure they have the experience they expect. With the help of AI, product recommendations are experiencing a renaissance. While recommended products are now expected, a lot of them are still using static rules, taxonomy or simple page view tracking mechanism. New advancement in data capture and attribution, product embeddings, and multi-device tracking, allows recommenders to be more precise, personalize and efficient. With these new tools in hand, applying the right strategy becomes paramount.</p>
+
+<!-- more -->
+
+<p>Once you are convinced that you want to implement recommendations, you need to decide about your strategy.</p>
+
+<p>Where do you want to add recommendations? What type of recommendations should users see?</p>
+
+<p>Explore some ideas on where you can implement product recommendations with Coveo.</p>
+
+<h2 id="home-page">Home page</h2>
+
+<p>The home page is a great opportunity to welcome visitors with some of your best-selling products. Shopping online feels riskier than shopping offline, especially with a new store. This is a common challenge for online stores since customers are not able to see, touch, or feel a product before purchasing it.</p>
+
+<p>Take advantage of the technique known as social proof to convince customers that they are purchasing products that are appreciated by other buyers by displaying your top products on the home page. Knowing that a product is a best seller tends to reduce cognitive dissonance regarding buyer’s remorse.</p>
+
+<p><img src="images/2021-01-20-where-to-add-product-recommendations-product_recommendations_homepage.png" alt="Product recommendations in the shopping cart"></p>
+
+<p>With the Coveo product recommendations model, you simply need to include the <a href="https://docs.coveo.com/en/3284/coveo-for-commerce/leveraging-machine-learning-product-recommendations#popular-items-bought-popularbought">Popular Items: Bought (popularBought)</a> ML parameter to your model. The model supports filtering for brands and categories in case you want to showcase best-sellers in a particular category or from a particular brand. In addition, if you are displaying the product review information, you can boost products that have a higher rating, which once again takes advantage of the social proof principle.</p>
+
+<h2 id="product-detail-page">Product detail page</h2>
+
+<p>When we mention product recommendations, the first thing customers have in mind are the various recommendations that are made on the product detail page. This is the most common location to find product recommendations due to the fact that it is an excellent way to showcase different products from your catalog that might interest your users.</p>
+
+<p>At this stage, customers are browsing on your site and are open to see suggestions for similar products. You can display recommendations based on similar products, products from the same brand, or even other products that are on sale that they might be interested in.</p>
+
+<p>The type of recommendation you want to display on your product detail page is up to you, but make sure that the strategy behind it fits with the type of customer you have. For example, if you are an online store that sells clothing from various popular brands, you might have some customers that are loyal to certain brands. This is why you should also add recommendations based on this criteria, not only for similar products.</p>
+
+<p><img src="images/2021-01-20-where-to-add-product-recommendations-product_recommendations_plp.png" alt="Product recommendations on the product listing page"></p>
+
+<p>To implement this digital experience with Coveo, you can use the Frequently Viewed Together setting from the Product Recommendations Machine Learning model.</p>
+
+<p>The following example illustrates a product listing page that contains not only one, but two different sets of recommendations. Both recommendations share the same model, but differ in the configuration.</p>
+
+<p>As mentioned above, both recommendations are using the Coveo Product Recommendation model with the <a href="https://docs.coveo.com/en/3284/coveo-for-commerce/leveraging-machine-learning-product-recommendations#frequently-viewed-together-frequentviewed">Frequently Viewed Together sub-model</a>. When leveraging this strategy, you need to pass the input product SKU for the model to provide its recommendations. This will allow you to showcase similar products.</p>
+
+<h2 id="shopping-cart-page">Shopping cart page</h2>
+
+<p>Depending on how you are leveraging recommendations and the number of products you have listed for sale, it is highly possible that a customer hasn’t encountered all of the products in your catalog.</p>
+
+<p>The cart represents the last opportunity that you have to increase the average order value by cross-selling the customer. At this stage, it is best to display products that the customer might be interested in based on what can be found in the cart.</p>
+
+<p>As in the image below, if a user has a BBQ in their cart, you do not want to recommend additional barbecues, because chances are that the customer will not purchase a second barbecue. However they might be interested in some accessories.</p>
+
+<p><img src="images/2021-01-20-where-to-add-product-recommendations-product_recommendations_cart.png" alt="Product recommendations in the shopping cart"></p>
+
+<p>With the Coveo Product Recommendation models, you can leverage the <a href="https://docs.coveo.com/en/3284/coveo-for-commerce/leveraging-machine-learning-product-recommendations#cart-recommender-cart">cart recommender strategy</a>. The model analyzes frequent buying patterns by grouping together sets of items that are frequently bought together in the same transaction (purchase events). When leveraging the Cart recommender strategy, you need to pass the input products SKUs in the itemIds ML query parameter for the model to provide its recommendations.</p>
+
+<p>As in the image above, if a user has a BBQ in their cart, the model is not recommending additional barbecues, because chances are that other customers didn’t purchase a second barbecue. This is why we are seeing BBQ accessories.</p>
+
+<h2 id="no-results-page">No results page</h2>
+
+<p>Do not miss the opportunity to recommend products when a user searches for a product that does not exist on your site. A visitor might not find the product they had in mind, but this does not mean that you can’t suggest something to them. Consider featuring popular products from your store.</p>
+
+<p>If you are a Coveo customer, you can achieve this with the <a href="https://docs.coveo.com/en/3284/coveo-for-commerce/leveraging-machine-learning-product-recommendations#popular-items-viewed-popularviewed">Popular Items: Viewed submodel</a>. No additional ML query parameters need to be configured for the model to provide its recommendations</p>
+
+<p>You might want to check out a previous blog post that we have about this: <a href="popular-results-when-no-results.html">Avoid No Results Pages, Display Popular Results Instead</a>.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Now that you have seen some strategies, all that is left is to choose what fits best for you site.</p>
+
+<p>Our team is working on adding more strategies for you to choose from, stay tuned!</p>
+
+<p><em>Are you passionate about UX like we are? <a href="https://www.coveo.com/en/company/careers/open-positions?utm_source=tech-blog&amp;utm_medium=blog-post&amp;utm_campaign=organic#t=career-search&amp;numberOfResults=9">Join the Coveo team</a> and help us make the web a better place!</em></p>
+
+                </div>
+                
+<div class="social">
+    <div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Where to leverage product recommendations - 4 Product Recommendation Examples in Commerce " data-related="coveo">Tweet</a>
+    </div>
+    
+    
+    
+    
+    
+    
+</div>
+
+
+                
+                <div class="tags">
+                      
+                        
+                          <a href="https://connect.coveo.com/s/global-search/%40uri#t=All&amp;sort=relevancy&amp;f:resourceType=%5BBlog%5D&amp;f:@blogtags=%5Bproduct%20recommendation%5D">product recommendation</a>                          
+                        
+                      
+                        
+                          <a href="https://connect.coveo.com/s/global-search/%40uri#t=All&amp;sort=relevancy&amp;f:resourceType=%5BBlog%5D&amp;f:@blogtags=%5Bmachine%20learning%5D">machine learning</a>                          
+                        
+                      
+                        
+                          <a href="https://connect.coveo.com/s/global-search/%40uri#t=All&amp;sort=relevancy&amp;f:resourceType=%5BBlog%5D&amp;f:@blogtags=%5Bcommerce%5D">commerce</a>                          
+                        
+                      
+                  </div>
+                
+
+            </section>
+
+            <footer>
+            <address>
+               
+               <img src="images/images-ariouxphoto.png">
+                <p>Written by <strong><a rel="author" href="https://twitter.com/alexandrarioux1" title="" target="_blank">Alexandra Rioux</a></strong><br>
+                <span class="muted">Lead Solution Architect</span>
+                </p>
+            </address>
+        </footer>
+        </div>
+        
+        <section class="disqus_cont">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'coveordblog'; // required: replace example with your forum shortname
+    
+    window.addEventListener('load', () => {
+        if (typeof OneTrust !== 'undefined' && OnetrustActiveGroups.includes(',C0004,')) {
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        } 
+    });
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        © 2023
+
+        <nav>
+            <a href="https://www.coveo.com/">Coveo</a> ·
+            <a href="https://connect.coveo.com">Connect</a>
+            <a href="https://docs.coveo.com">Documentation</a>
+            <a href="https://careers.coveo.com">Careers</a>  ·
+            <a href="#ot_toggleInfoDisplay" class="show-ot-infoDisplay">Cookies Preferences</a>
+            <a href="https://www.coveo.com/en/pages/privacy-policy#California-Residents" target="_blank" class="ccpa"> <img src="images/images-ccpa-privacyoptions.svg" alt="CCPA" width="33" id="ccpa_icon">Your Privacy Choices</a>
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/coveo" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="feed.html" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/js-main.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript" charset="utf-8">
+
+$(function() {
+  enableSelectBoxes();
+});
+
+function enableSelectBoxes(){
+  $('div.selectBox').each(function(){
+
+    $(this).children('span.selected').html("Blog");
+
+    $(this).children('span.selected,span.selectArrow').click(function(){
+      $('span.selectArrow').toggleClass('active');
+      $('div.selectBox').toggleClass('active');
+      if($(this).parent().children('div.selectOptions').css('display') == 'none'){
+        $(this).parent().children('div.selectOptions').css('display','block');
+      } else {
+        $(this).parent().children('div.selectOptions').css('display','none');
+      }
+    });
+
+    $(this).find('span.selectOption').click(function() {
+      $(this).parent().css('display','none');
+      location.replace($(this).attr('value'));
+    });
+  });
+}
+
+</script>
+
+
+</header></body>
+</html>
