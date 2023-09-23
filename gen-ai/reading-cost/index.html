@@ -5,6 +5,273 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Where to leverage product recommendations - 4 Product Recommendation Examples in Commerce  — Source @ Coveo</title>
+    
+    <style type="text/css">
+        /* relevant CSS */
+
+@property --ss {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: true;
+}
+
+@property --angle_mm {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: true;
+}
+
+@property --angle_hh {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: true;
+}
+
+
+/* --mm is defined in the HTML panel */
+
+:root {
+   --angle_mm: calc(6deg  * (var(--mm) + (var(--ss) / 60)));
+   --angle_hh: calc(.5deg * var(--mm));
+   
+   animation: 
+      mins steps(var(--mm), start) forwards,
+      secs linear var(--mm) forwards,
+      clock linear forwards;
+   animation-timeline: scroll();
+}
+
+
+/* digital clock */
+
+.countdown__display--mm {
+   counter-reset: mm var(--mm);
+   &::before {
+      content: counter(mm, decimal-leading-zero);
+   }
+}
+
+.countdown__display--ss {
+   counter-reset: ss var(--ss);
+   &::before {
+      content: counter(ss, decimal-leading-zero);
+   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+   .countdown__display--ss {
+      display: none;
+   }
+}
+
+@keyframes mins { to { --mm:0 } }
+@keyframes secs { to { --ss:0 } from { --ss:59 } }
+
+
+/* Analogic clock */
+
+svg {
+   display: block;
+   inline-size: 3rem;
+   margin: 0 auto;
+   aspect-ratio: 1;
+   fill: none;
+   stroke: var(--color);  
+   stroke-linecap: round;
+}
+
+#minutes {
+   transform-origin: 50% 50%;
+   transform: rotateZ(var(--angle_mm));
+}
+
+#hours {
+   transform-origin: 50% 50%;
+   transform: rotateZ(var(--angle_hh));
+}
+
+
+@keyframes clock { to { --angle_mm: 0deg } }
+
+/* End of relevant CSS. */
+
+
+/**  Not relevant for the core functionality **/
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+html {
+  scroll-behavior: smooth;
+  padding: 0 0 2rem 0;
+  margin: 0;
+}
+
+main {
+  padding: 5rem var(--gap) 0;
+  font: 300 1.2rem/1.9 Montserrat;
+}
+
+@media (min-width: 40rem) {
+  main {
+    padding-block-start: 0;
+    margin-inline-end: 20%;
+  }
+}
+
+main a {
+  color: var(--color);
+}
+main p {
+  margin-block-start: 3rem;
+}
+main h2 {
+  text-align: left;
+  font-size: 2.4rem;
+  margin-block-start: 3rem;
+}
+
+h1 {
+  font: 700 clamp(1.4rem, 1.4rem + 4vw, 5rem) "Hachi Maru Pop";
+  color: var(--color);
+  text-align: center;
+  margin: 0;
+  padding: 2rem 1rem 1rem;
+}
+
+small {
+   font-size: 65%;
+}
+
+strong {
+   color: var(--color);
+   font-weight: 500;
+}
+
+code {
+   font:inherit;
+   font-style: italic;
+   background: var(--color);
+   color: #fff;
+   padding: .25rem;
+   border-radius: 5px;
+   
+}
+
+@media (min-width: 40rem) {
+  h1 {
+    margin-block-start: 0;
+  }
+}
+
+h2 {
+  color: var(--color);
+  text-align: center;
+  margin: 1rem 0 0;
+  font: 1.5rem "Hachi Maru Pop";
+}
+
+@media (max-width: 40rem) {
+  h2 {
+    margin: 0;
+  }
+}
+
+
+
+:root {
+  --gap: 1rem;
+  --color: #689;
+}
+
+.countdown {
+  position: fixed;
+  padding: var(--gap);
+  inset: 0 0 0 80%;
+  background: #e6edf3;
+}
+
+@media (max-width: 39.99rem) {
+  .countdown {
+    display: flex;
+    align-items: center;
+    inset: 0 0 auto 0;
+    justify-content: space-between;
+  }
+}
+
+.countdown__wrapper {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  color: yellowgreen;
+  gap: var(--gap);
+}
+
+@media (min-width: 40rem) {
+  .countdown__wrapper {
+    justify-content: center;
+    padding: var(--gap);
+  }
+   
+   svg {
+      margin-block: 1rem 2rem;
+   }
+}
+
+.countdown span {
+  font: 66% "Hachi Maru Pop";
+  color: var(--color);
+}
+
+.countdown__display {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  font: 1.2rem Montserrat;
+  font-weight: bold;
+  animation-timeline: scroll;
+}
+
+@media (min-width: 40rem) {
+  .countdown__display {
+    min-inline-size: 70%;
+    font-size: 2rem;
+  }
+}
+
+
+.warning { 
+   display: none;
+   padding: 2rem;
+   margin:  0 2rem 2rem 2rem;
+   background: #ebeca9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+   .motion {
+      display: block;
+   }
+}
+
+@supports (not (animation-timeline: scroll())) {
+   .scroll { 
+      display: block;
+   }
+}
+
+@supports not (background: paint(something))  {
+  .houdini {
+    display: block;
+  }
+}
+        </style>
+
     <link rel="stylesheet" href="https://use.typekit.net/bqa0xml.css">
          
     <link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.10093/css/CoveoFullSearch.css">
@@ -106,6 +373,45 @@ function OptanonWrapper() { }
 
 </head>
 <body>
+    <section>
+
+        <aside class="countdown">   
+     
+           <!-- define here the time needed to 
+                read the article (in minutes).
+                
+                If you set <n> minutes you will see
+                <n-1> mins and 59 seconds in the
+                fixed bar.
+           -->
+           <style>
+              @property --mm {
+                syntax: '<integer>';
+                initial-value: 24;
+                inherits: true;
+              }
+           </style>
+     
+           <div>
+              <svg viewBox="0 0 24 24"
+                   xmlns="http://www.w3.org/2000/svg">
+                 <circle cx="12" cy="12" r="11" />
+                 <path d="M12 12V6" id="hours" />
+                 <path d="M12 12V4" id="minutes" />
+              </svg>
+           </div>
+           <div class="countdown__wrapper">
+              <div class="countdown__display 
+                          countdown__display--mm">
+                 <span>min</span>      
+              </div>
+              <div class="countdown__display 
+                          countdown__display--ss">
+                 <span>sec</span>
+              </div>
+           </div>     
+        </aside>
+
 
 	<header>
 		<div class="upHeader clear">
@@ -363,5 +669,9 @@ function enableSelectBoxes(){
 </script>
 
 
-</header></body>
+</header>
+
+</section>
+
+</body>
 </html>
